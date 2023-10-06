@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #19ead0;
+  --primary-color-dark: #53d062;
+  --grey-color: #969696;
+  --secondary-color: #000;
+}
+
+.colour-primary {
+  color: var(--secondary-color);
+}
+
+.colour-primary-dark {
+  color: var(--primary-color-dark);
+}
+
+.colour-secondary {
+  color: var(--secondary-color);
+}
+
+.colour-grey {
+  color: var(--grey-color);
+}
