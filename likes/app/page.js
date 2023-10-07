@@ -2,6 +2,7 @@ import Post from "./components/cards/Post";
 import Title from "./components/typography/Title";
 import AddPost from "./components/forms/AddPost";
 import Nav from "./components/globalComps/Nav";
+import Footer from "./components/globalComps/Footer";
 
 export default function Home() {
   const posts = [
@@ -51,6 +52,7 @@ export default function Home() {
         </div>
         <AddPost />
       </main>
+      <Footer />
     </>
   );
 }
