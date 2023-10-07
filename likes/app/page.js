@@ -1,6 +1,7 @@
 import Post from "./components/cards/Post";
 import Title from "./components/typography/Title";
-import AddPost from "./components/typography/forms/AddPost";
+import AddPost from "./components/forms/AddPost";
+import Nav from "./components/globalComps/Nav";
 
 export default function Home() {
   const posts = [
@@ -33,20 +34,23 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-12 items-center">
-      <Title text="Social Site" />
-      <div className="flex flex-wrap gap-8 justify-center">
-        {posts.map((post) => {
-          return (
-            <Post
-              // spread the post values into the post component
-              {...post}
-              key={post.id}
-            />
-          );
-        })}
-      </div>
-      <AddPost />
-    </main>
+    <>
+      <Nav />
+      <main className="flex min-h-screen flex-col p-12 items-center">
+        <Title text="Social Site" />
+        <div className="flex flex-wrap gap-8 justify-center">
+          {posts.map((post) => {
+            return (
+              <Post
+                // spread the post values into the post component
+                {...post}
+                key={post.id}
+              />
+            );
+          })}
+        </div>
+        <AddPost />
+      </main>
+    </>
   );
 }
