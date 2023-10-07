@@ -14,13 +14,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
   theme: {
     extend: {
       colors: {
-        "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)"
+        'primary-color': 'var(--primary-color)',
+        'secondary-color': 'var(--secondary-color)',
       },
     },
   },
-}
+};

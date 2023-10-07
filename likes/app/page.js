@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="colour-primary">fdsa</p>
+    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+      <p className='colour-primary'>fdsa</p>
+      <button class='btn btn-primary'>Button</button>
     </main>
-  )
+  );
 }
