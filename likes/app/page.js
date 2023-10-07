@@ -1,4 +1,5 @@
 import Post from './components/cards/Post';
+import Title from './components/typography/Title';
 
 export default function Home() {
   const posts = [
@@ -23,7 +24,7 @@ export default function Home() {
   ];
   return (
     <main className='flex min-h-screen flex-col p-12'>
-      <h1>dfsa</h1>
+      <Title text='Social Site' />
       <div className='flex flex-wrap gap-8 justify-center'>
         {posts.map((post) => {
           return (
