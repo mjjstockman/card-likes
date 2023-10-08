@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Nav = () => {
   return (
     <div className="navbar bg-base-100">
@@ -6,9 +8,7 @@ const Nav = () => {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Add Post</a>
-          </li>
+          <Link href="#addPostForm">Add Post</Link>
         </ul>
       </div>
     </div>
